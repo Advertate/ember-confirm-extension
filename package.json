@@ -1,7 +1,7 @@
 {
   "name": "ember-confirm-button",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Button with a confirm state. An alternative to a confirm dialog.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": "https://github.com/advertate/ember-confirm-button",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "advertate",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
@@ -33,9 +33,14 @@
     "ember-export-application-global": "^1.0.2"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "button",
+    "confirm"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "dependencies": {
+    "ember-cli-htmlbars": "0.7.4"
   }
 }
