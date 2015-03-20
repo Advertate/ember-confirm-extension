@@ -1,25 +1,33 @@
-# Ember-confirm-button
+# ember-confirm-button
 
-This README outlines the details of collaborating on this Ember addon.
+Add a confirmation button to your ember-cli project.
+
+Use confirmation mechanisms (buttons/dialogs) with caution. The are now always the best choice UX-wise. For more information on that topic see:
+* [Never Use a Warning When you Mean Undo](http://alistapart.com/article/neveruseawarning)
+* [Deletion: Confirm or Undo? Which is the better option and why?](http://ux.stackexchange.com/questions/71960/deletion-confirm-or-undo-which-is-the-better-option-and-why)
+* [Try Undos instead of prompting for confirmation](https://goodui.org/#8)
+* [Undo](http://patternry.com/p=undo/)
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```bash
+ember install:addon ember-confirm-button
+```
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```handlebars
+{{confirm-button label='Destroy Earth' questionText='Do you really want to destroy the planet?' confirmText='Yes' declineText='No' confirmAction='destroyEarth'}}
+```
 
-## Running Tests
+## Styling
 
-* `ember test`
-* `ember test --server`
+Take a look at the [component's template](https://github.com/advertate/ember-confirm-button/tree/master/addon/templates/components/confirm-button.hbs) to see which css classes are used.
 
-## Building
+## Contributions
 
-* `ember build`
+PRs are always welcome! Make sure that code changes are covered by tests.
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## License
+
+MIT
