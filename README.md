@@ -1,3 +1,4 @@
+# THIS IS WIP AND NOT RELEASED AS AN NPM PROJECT YET. STAY TUNED!
 # ember-confirm-button
 
 Add a confirmation button to your ember-cli project.
