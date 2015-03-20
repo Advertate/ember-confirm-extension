@@ -1,0 +1,5 @@
+{{#if confirmMode}}
+<span class="ecb-confirm" {{action 'confirm'}}>{{confirmText}}</span><span class="ecb-question">{{questionText}}</span><span class="ecb-decline" {{action 'decline'}}>{{declineText}}</span>
+{{else}}
+  <button type="button" class="ecb-button" {{action 'click'}}>{{label}}</button>
+{{/if}}
