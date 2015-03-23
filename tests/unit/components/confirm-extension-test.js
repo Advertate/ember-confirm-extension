@@ -17,11 +17,11 @@ test('click on yielded template shows a bubble with a confrim and a decline opti
   });
 
   var $component = this.render();
-  assert.equal($component.find('.ecb-bubble').length, 0);
+  assert.equal($component.find('.ece-bubble').length, 0);
   $component.find('span').click();
-  assert.equal($component.find('.ecb-confirm').text().trim(), 'yes');
-  assert.equal($component.find('.ecb-decline').text().trim(), 'no');
-  assert.equal($component.find('.ecb-bubble').length, 1);
+  assert.equal($component.find('.ece-confirm').text().trim(), 'yes');
+  assert.equal($component.find('.ece-decline').text().trim(), 'no');
+  assert.equal($component.find('.ece-bubble').length, 1);
 });
 
 test('click on decline leaves the confirm mode and hides the bubble', function(assert) {
@@ -32,10 +32,10 @@ test('click on decline leaves the confirm mode and hides the bubble', function(a
   });
 
   var $component = this.render();
-  assert.equal($component.find('.ecb-bubble').length, 1);
-  $component.find('.ecb-decline').click();
+  assert.equal($component.find('.ece-bubble').length, 1);
+  $component.find('.ece-decline').click();
   assert.equal(component.get('confirmMode'), false);
-  assert.equal($component.find('.ecb-bubble').length, 0);
+  assert.equal($component.find('.ece-bubble').length, 0);
 });
 
 test('click on confirm triggers the confirmAction, leaves confirmMode and hides bubble', function(assert) {
@@ -53,8 +53,8 @@ test('click on confirm triggers the confirmAction, leaves confirmMode and hides 
   });
 
   var $component = this.render();
-  assert.equal($component.find('.ecb-bubble').length, 1);
-  $component.find('.ecb-confirm').click();
+  assert.equal($component.find('.ece-bubble').length, 1);
+  $component.find('.ece-confirm').click();
   assert.equal(component.get('confirmMode'), false);
-  assert.equal($component.find('.ecb-bubble').length, 0);
+  assert.equal($component.find('.ece-bubble').length, 0);
 });
