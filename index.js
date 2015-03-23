@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-confirm-button'
+  name: 'ember-confirm-extension'
 };

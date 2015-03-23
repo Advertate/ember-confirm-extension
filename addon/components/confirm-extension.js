@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import layout from '../templates/components/confirm-button';
+import layout from '../templates/components/confirm-extension';
 
 export default Ember.Component.extend({
   layout: layout,

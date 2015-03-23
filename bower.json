@@ -1,5 +1,5 @@
 {
-  "name": "ember-confirm-button",
+  "name": "ember-confirm-extension",
   "dependencies": {
     "jquery": "^1.11.1",
     "ember": "1.10.0",

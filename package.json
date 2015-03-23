@@ -1,7 +1,7 @@
 {
-  "name": "ember-confirm-button",
+  "name": "ember-confirm-extension",
   "version": "0.0.1",
-  "description": "Button with a confirm state. An alternative to a confirm dialog.",
+  "description": "Extend any template block by a confirmation \"bubble\"",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/advertate/ember-confirm-button",
+  "repository": "https://github.com/advertate/ember-confirm-extension",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -34,7 +34,7 @@
   },
   "keywords": [
     "ember-addon",
-    "button",
+    "confirmation",
     "confirm"
   ],
   "ember-addon": {

@@ -1,0 +1,6 @@
+<span {{action 'click'}}>{{yield}}</span>
+{{#if confirmMode}}
+  <div class="ecb-bubble">
+    <span class="ecb-question">{{questionText}}</span><span class="ecb-confirm" {{action 'confirm'}}>{{confirmText}}</span><span class="ecb-decline" {{action 'decline'}}>{{declineText}}</span>
+  </div>
+{{/if}}
