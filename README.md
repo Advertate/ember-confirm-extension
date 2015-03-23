@@ -1,4 +1,3 @@
-# THIS IS WIP AND NOT RELEASED AS AN NPM PROJECT YET. STAY TUNED!
 # ember-confirm-extension
 
 Extend any template block by a confirmation "bubble".
