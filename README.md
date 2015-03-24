@@ -1,5 +1,7 @@
 # ember-confirm-extension
 
+[Demo](http://advertate.github.io/)
+
 Extend any template block by a confirmation "bubble".
 
 Use confirmation mechanisms (buttons/bubbles/dialogs) with caution. The are not always the best choice UX-wise. For more information on that topic see:
