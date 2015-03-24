@@ -38,6 +38,20 @@ test('click on decline leaves the confirm mode and hides the bubble', function(a
   assert.equal($component.find('.ece-bubble').length, 0);
 });
 
+test('click on the yielded template leaves the confirm mode and hides the bubble', function(assert) {
+  assert.expect(3);
+
+  var component = this.subject({
+    confirmMode: true
+  });
+
+  var $component = this.render();
+  assert.equal($component.find('.ece-bubble').length, 1);
+  $component.find('span')[0].click();
+  assert.equal(component.get('confirmMode'), false);
+  assert.equal($component.find('.ece-bubble').length, 0);
+});
+
 test('click on confirm triggers the confirmAction, leaves confirmMode and hides bubble', function(assert) {
   assert.expect(4);
 

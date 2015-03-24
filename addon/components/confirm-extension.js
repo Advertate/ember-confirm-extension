@@ -6,7 +6,7 @@ export default Ember.Component.extend({
 
   actions: {
     click: function() {
-      this.set('confirmMode', true);
+      this.set('confirmMode', !this.get('confirmMode'));
     },
     confirm: function() {
       this.set('confirmMode', false);
