@@ -47,7 +47,7 @@ test('click on the yielded template leaves the confirm mode and hides the bubble
 
   var $component = this.render();
   assert.equal($component.find('.ece-bubble').length, 1);
-  $component.find('span')[0].click();
+  $component.find('span').click();
   assert.equal(component.get('confirmMode'), false);
   assert.equal($component.find('.ece-bubble').length, 0);
 });
@@ -71,4 +71,30 @@ test('click on confirm triggers the confirmAction, leaves confirmMode and hides 
   $component.find('.ece-confirm').click();
   assert.equal(component.get('confirmMode'), false);
   assert.equal($component.find('.ece-bubble').length, 0);
+});
+
+test('click on <body> should leave confirmMode when initially open', function (assert) {
+  assert.expect(2);
+  var component = this.subject({
+    confirmMode: true
+  });
+
+  var $component = this.render();
+  assert.ok(component.get('confirmMode'), 'should be in confirm mode');
+  $('body').click();
+  assert.ok(!component.get('confirmMode'), 'should not be in confirm mode');
+});
+
+test('click on <body> should leave confirmMode when opened after render', function (assert) {
+  assert.expect(2);
+  var component = this.subject({
+    confirmMode: false
+  });
+
+  var $component = this.render();
+  Ember.run(component, 'set', 'confirmMode', true);
+ 
+  assert.ok(component.get('confirmMode'), 'should be in confirm mode');
+  $('body').click();
+  assert.ok(!component.get('confirmMode'), 'should not be in confirm mode');
 });
