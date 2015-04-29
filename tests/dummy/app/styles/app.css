@@ -1,0 +1,21 @@
+
+.simple-styles .ece-container {
+	display: inline-block;
+}
+
+.simple-styles .ece-bubble {
+	border: 1px solid grey;
+	padding: 10px;
+	position: absolute;
+	background-color: white;
+}
+
+.simple-styles .ece-confirm {
+	background-color: red;
+	padding: 8px;
+	font-size: 1.5em;
+	color: white;
+	border-radius: 100%;
+	width: 3em;
+	height: 3em;
+}

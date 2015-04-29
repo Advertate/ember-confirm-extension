@@ -1,6 +1,15 @@
 
-<h1>Central Command</h1>
+<h1>Unstyled</h1>
 
 {{#confirm-extension questionText='really?' confirmText='yes' declineText='no' confirmAction='boom'}}
   <button>Destroy planet earth</button>
 {{/confirm-extension}}
+
+<h1>Simple Styles</h1>
+
+<div class="simple-styles">
+  ATTENTION! {{#confirm-extension questionText='Do you really want to destroy our home planet?' confirmText='sure!' declineText='no' confirmAction='boom'}}
+    <button>Destroy planet earth</button>
+  {{/confirm-extension}} THIS IS <strong>DANGEROUS</strong>!
+<p>I'm positive. This power should not be abused</p>
+</div>
