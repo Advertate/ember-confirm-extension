@@ -6,6 +6,9 @@ import layout from '../templates/components/confirm-extension';
 export default Ember.Component.extend({
   layout: layout,
 
+  tagName: 'span',
+  classNames: ['ece-container'],
+
   _setupClickHandler: function () {
     var closer = _clickHandlerFor(this);
     this.set('_closer', closer);
