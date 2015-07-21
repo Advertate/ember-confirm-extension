@@ -73,6 +73,26 @@ test('click on confirm triggers the confirmAction, leaves confirmMode and hides 
   assert.equal($component.find('.ece-bubble').length, 0);
 });
 
+test('When an confirmActionParam is defined, it is passed to the confirmAction', function(assert) {
+  assert.expect(1);
+
+  var targetObject = {
+    externalAction: function(confirmActionParam) {
+      assert.equal(confirmActionParam, "Test");
+    }
+  };
+
+  var component = this.subject({
+    confirmMode: true,
+    confirmAction: 'externalAction',
+    targetObject: targetObject,
+    confirmActionParam: 'Test'
+  });
+
+  var $component = this.render();
+  $component.find('.ece-confirm').click();
+});
+
 test('click on <body> should leave confirmMode when initially open', function (assert) {
   assert.expect(2);
   var component = this.subject({
