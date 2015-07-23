@@ -1,6 +1,6 @@
 {
   "name": "ember-confirm-extension",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Extend any template block by a confirmation \"bubble\"",
   "directories": {
     "doc": "doc",
