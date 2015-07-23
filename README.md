@@ -23,6 +23,13 @@ ember install:addon ember-confirm-extension
   <button>Destroy Earth</button>
 {{/confirm-extension}}
 ```
+If you want to pass a parameter to the `confirmAction` you can use the `confirmActionParam` property:
+
+```handlebars
+{{#confirm-extension questionText='Do you really want to destroy the planet?' confirmText='Yes' declineText='No' confirmAction='destroyPlanet' confirmActionParam="Earth"}}
+  <button>Destroy planet</button>
+{{/confirm-extension}}
+```
 
 ## Styling
 

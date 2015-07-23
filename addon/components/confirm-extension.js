@@ -43,7 +43,7 @@ export default Ember.Component.extend({
     },
     confirm: function() {
       this.set('confirmMode', false);
-      this.sendAction('confirmAction');
+      this.sendAction('confirmAction', this.get('confirmActionParam'));
     },
     decline: function() {
       this.set('confirmMode', false);
