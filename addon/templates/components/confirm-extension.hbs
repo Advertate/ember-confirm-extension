@@ -2,6 +2,9 @@
 {{#if confirmMode}}
   <div class="ece-bubble">
     <div class="ece-question">{{questionText}}</div>
+      {{#if explanationText}}
+        <div class="ece-text">{{explanationText}}</div>
+      {{/if}}  
     <div class="ece-buttons">
       <button class="ece-confirm" {{action 'confirm'}}>{{confirmText}}</button>
       <button class="ece-decline" {{action 'decline'}}>{{declineText}}</button>
