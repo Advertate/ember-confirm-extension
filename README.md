@@ -22,6 +22,11 @@ ember install:addon ember-confirm-extension
 {{#confirm-extension questionText='Do you really want to destroy the planet?' confirmText='Yes' declineText='No' confirmAction='destroyEarth'}}
   <button>Destroy Earth</button>
 {{/confirm-extension}}
+
+<!-- with optional explanation text -->
+{{#confirm-extension questionText='Do you really want to destroy the planet?' explanationText="be careful you might get dirty" confirmText='Yes' declineText='No' confirmAction='destroyEarth'}}
+  <button>Destroy Earth</button>
+{{/confirm-extension}}
 ```
 
 ## Styling

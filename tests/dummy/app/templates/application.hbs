@@ -13,3 +13,10 @@
   {{/confirm-extension}} THIS IS <strong>DANGEROUS</strong>!
 <p>I'm positive. This power should not be abused</p>
 </div>
+
+<h1>Simple Styles With Added Explanation Text</h1>
+<div class="simple-styles">
+  {{#confirm-extension questionText='Do you really want to destroy our home planet?' confirmText='sure!' explanationText='ATTENTION! THIS IS DANGEROUS!' declineText='no' confirmAction='boom'}}
+  <button>Destroy planet earth</button>
+  {{/confirm-extension}}
+</div>
